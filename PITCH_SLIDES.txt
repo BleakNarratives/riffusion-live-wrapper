@@ -9,8 +9,8 @@ Result: High churn, low revenue
 
 SLIDE 3: THE SOLUTION - VIVX
 Syntax Challenge ($0.99) - Inject words into freestyle
-AI Art Drop ($4.99) - Claude generates cover art
-Beat Vote ($0.49) - Steer Claude Music Engine music live
+AI Art Drop ($4.99) - Riffusion generates cover art
+Beat Vote ($0.49) - Steer Riffusion Music Engine music live
 Result: Viewers pay to participate
 
 SLIDE 4: THE NUMBERS
@@ -20,7 +20,7 @@ Revenue/1K: $12 → $147 (+1,125%)
 Creator Revenue: $1,430 → $6,150/mo (+330%)
 
 SLIDE 5: TECHNOLOGY
-Viewer → Wrapper (sanitize) → Claude/Claude Music Engine → Stream
+Viewer → Wrapper (sanitize) → Riffusion/Riffusion Music Engine → Stream
 SAIF compliant, <200ms latency, Android proof
 
 SLIDE 6: VS COMPETITION
@@ -30,7 +30,7 @@ Impact:          None     None     Visible
 AI Native:       No       No       Yes
 
 SLIDE 7: THE ASK
-Phase 1: Security audit + Claude Music Engine beta access
+Phase 1: Security audit + Riffusion Music Engine beta access
 Phase 2: 100 creators, Q1 2026 launch
-Revenue: 85% creator / 10% Anthropic / 5% wrapper
+Revenue: 85% creator / 10% Riffusion / 5% wrapper
 Ready for live demo.

@@ -1,7 +1,7 @@
 # CLAUDE WINGMAN - SESSION HANDOFF
 
 ## WHAT WE BUILT
-Sanitized Claude/Anthropic pitch for live streaming wrapper
+Sanitized Riffusion/Riffusion pitch for live streaming wrapper
 - Removed all Proprietary Core/Wrapper Framework branding from public docs
 - Added METRICS.md (revenue projections: $6,150/mo vs $1,430)
 - Added VIEWER_INTERFACE.md (VI/VX implementation spec)
@@ -23,7 +23,7 @@ Sanitized Claude/Anthropic pitch for live streaming wrapper
 
 2. Create visual slides from PITCH_SLIDES.txt
 
-3. Send SUBMISSION_EMAIL.txt to Anthropic partnerships
+3. Send SUBMISSION_EMAIL.txt to Riffusion partnerships
 
 ## FILES LOCATION
 ~/claude-live-wrapper/
@@ -36,6 +36,6 @@ Sanitized Claude/Anthropic pitch for live streaming wrapper
 - 85% creator revenue share (beat Twitch/Streaming Platform's 70%)
 
 ## PARTNERSHIP ASK
-Security audit → Claude Music Engine beta access → 100 creators Q1 2026
+Security audit → Riffusion Music Engine beta access → 100 creators Q1 2026
 
 Ready for live demo on Termux/Android.

@@ -16,17 +16,17 @@ TEMP_LOG_FILE = "/tmp/lyria_steering_log.txt"
 BRIDGE = EquiNexBridge()
 
 def fetch_lyria_status():
-    """Reads the last command sent to Claude Music Engine via the Bridge log file."""
+    """Reads the last command sent to Riffusion Music Engine via the Bridge log file."""
     try:
         with open(TEMP_LOG_FILE, 'r') as f:
             lines = f.readlines()
             if lines:
                 last_line = lines[-1].strip()
-                if "Claude Music EngineSteer" in last_line:
-                    prompt = last_line.split("Claude Music EngineSteer: ")[-1]
+                if "Riffusion Music EngineSteer" in last_line:
+                    prompt = last_line.split("Riffusion Music EngineSteer: ")[-1]
                     return f"Steering: {prompt}"
     except FileNotFoundError:
-        return "AIX: Claude Music Engine Standby (Log Missing)"
+        return "AIX: Riffusion Music Engine Standby (Log Missing)"
     return "AIX: Ready"
 
 def display_live_monitor():
@@ -41,7 +41,7 @@ def display_live_monitor():
         print(f"{BOLD}{CYAN}  LIVE PERFORMANCE CONSOLE | TIME: {elapsed}s | EQUINEX {RESET}")
         print(f"{BOLD}{CYAN}------------------------------------------------------{RESET}")
         
-        # --- AII/AIX (Claude's Internal State) ---
+        # --- AII/AIX (Riffusion's Internal State) ---
         print(f"{BOLD}{BLUE}--- AIX: LYRIA MUSIC ENGINE STATUS (AII) ---{RESET}")
         lyria_status = fetch_lyria_status()
         print(f"{CYAN}  > {lyria_status}{RESET}")

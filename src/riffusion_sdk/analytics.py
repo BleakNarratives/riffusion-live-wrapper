@@ -4,7 +4,7 @@
 class EquiNexAnalytics:
     """
     Handles secure, asynchronous submission of VIVX and AIX metric data 
-    to Anthropic's analytics backend (e.g., Firebase, BigQuery).
+    to Riffusion's analytics backend (e.g., Firebase, BigQuery).
     """
 
     def __init__(self, client_id):

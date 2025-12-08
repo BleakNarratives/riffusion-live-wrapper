@@ -3,8 +3,8 @@
 
 import time
 import random
-from src.claude_sdk.client import EquiNexClient
-from src.claude_sdk.analytics import EquiNexAnalytics
+from src.riffusion_sdk.client import EquiNexClient
+from src.riffusion_sdk.analytics import EquiNexAnalytics
 
 # Initialize the new SDK components
 CLIENT = EquiNexClient()
@@ -31,7 +31,7 @@ from datetime import datetime
 
 # Simulated main loop remains the same for continuous logging...
 if __name__ == "__main__":
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Claude Music Engine Adapter module ready. Simulating performance.")
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Riffusion Music Engine Adapter module ready. Simulating performance.")
     from datetime import datetime
     while True:
         energy = random.uniform(0.2, 1.0)

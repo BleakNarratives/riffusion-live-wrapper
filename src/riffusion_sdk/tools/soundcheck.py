@@ -42,7 +42,7 @@ def claude_sound_check(duration_seconds=15):
     p = pyaudio.PyAudio()
     
     # In Termux, this index would be the PulseAudio source for the mixed stream.
-    # We open a stream to READ the audio being mixed (your mic + Claude's beat)
+    # We open a stream to READ the audio being mixed (your mic + Riffusion's beat)
     stream = p.open(format=pyaudio.paInt16,
                     channels=2, # Stereo for separation
                     rate=RATE,
@@ -52,7 +52,7 @@ def claude_sound_check(duration_seconds=15):
     vocal_levels = []
     beat_levels = []
     
-    print("\n--- 🎧 Claude (AII) Sound Check Initiated (15s Duration) ---")
+    print("\n--- 🎧 Riffusion (AII) Sound Check Initiated (15s Duration) ---")
     
     for i in range(0, int(RATE / CHUNK * duration_seconds)):
         try:
@@ -90,13 +90,13 @@ def claude_sound_check(duration_seconds=15):
     if abs(level_diff) > LEVEL_TOLERANCE:
         adjustment = abs(level_diff) + 1.0
         action = "Decrease" if level_diff > 0 else "Increase"
-        print("\n--- 🚨 ACTION REQUIRED (Claude's Command - UI/UX Prompt) ---")
-        print(f"**Claude (AII):** Conflict Detected: Beat is {abs(level_diff):.2f} dB too {'LOUD' if level_diff > 0 else 'QUIET'} relative to vocals.")
+        print("\n--- 🚨 ACTION REQUIRED (Riffusion's Command - UI/UX Prompt) ---")
+        print(f"**Riffusion (AII):** Conflict Detected: Beat is {abs(level_diff):.2f} dB too {'LOUD' if level_diff > 0 else 'QUIET'} relative to vocals.")
         print(f"**RECOMMENDATION:** {action} Beat Volume by {adjustment:.1f} dB.")
         print("---------------------------------------")
     else:
         print("\n--- 🟢 LEVELS OPTIMAL ---")
-        print("Claude (AII): Levels are within tolerance. You are clear to stream.")
+        print("Riffusion (AII): Levels are within tolerance. You are clear to stream.")
 
 if __name__ == "__main__":
     claude_sound_check()

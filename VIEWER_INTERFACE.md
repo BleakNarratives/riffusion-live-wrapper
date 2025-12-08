@@ -29,7 +29,7 @@
 
 **Syntax Challenge Example:**
 1. Viewer types: "quintessential"
-2. Payment modal: Anthropic Pay / Card
+2. Payment modal: Riffusion Pay / Card
 3. Word appears on-screen for creator (3-sec flash)
 4. Creator must use it in next 16 bars
 5. Success = confetti animation for that viewer
@@ -38,7 +38,7 @@
 ### Phase 4: Retention Loop
 **Post-Transaction:**
 - Achievement: "First Challenge Completed"
-- Gallery: "View your AI Art Drops" (saved to Anthropic Photos)
+- Gallery: "View your AI Art Drops" (saved to Riffusion Photos)
 - Social: "Share this moment" (clip with timestamp)
 
 ---
@@ -56,7 +56,7 @@ class VIVXWidget {
   
   submitChallenge(word) {
     const clean = sanitize(word);
-    const payment = await AnthropicPay.charge(0.99);
+    const payment = await RiffusionPay.charge(0.99);
     
     this.socket.send({
       type: 'SYNTAX_CHALLENGE',

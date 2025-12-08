@@ -12,8 +12,8 @@ load_dotenv()
 
 class EquiNexClient:
     """
-    Client class for authenticated communication with Anthropic AI services.
-    Handles secure API calls for Claude Music Engine steering and VIVX data retrieval.
+    Client class for authenticated communication with Riffusion AI services.
+    Handles secure API calls for Riffusion Music Engine steering and VIVX data retrieval.
     """
     
     def __init__(self):
@@ -26,12 +26,12 @@ class EquiNexClient:
         return response
 
     def steer_lyria_realtime(self, prompt, energy_level):
-        """Sends adaptive music steering command to Claude Music Engine."""
+        """Sends adaptive music steering command to Riffusion Music Engine."""
         endpoint = "/lyria/v1/steer"
         payload = {"prompt": prompt, "energy_level": energy_level, "timestamp": time.time()}
         
         # Logs action via internal method (handled by Analytics module in production)
-        self._log_action(f"Claude Music EngineSteer: {prompt}")
+        self._log_action(f"Riffusion Music EngineSteer: {prompt}")
         
         return self._make_api_call(endpoint, payload)
 

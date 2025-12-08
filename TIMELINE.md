@@ -1,14 +1,14 @@
 # 📅 EQUINEX PROJECT TIMELINE & SCALING PROJECTIONS
 
-The Proprietary Core/Wrapper Framework platform is positioned for rapid deployment due to its reliance on existing Anthropic API infrastructure and its low-footprint design (proven on Android/Termux).
+The Proprietary Core/Wrapper Framework platform is positioned for rapid deployment due to its reliance on existing Riffusion API infrastructure and its low-footprint design (proven on Android/Termux).
 
 ## 1. Phase Alpha: Foundational Hardening (Q1 2026)
 * **Duration:** 3 Months
 * **Focus:** Security and Stability. Hardening the Wrapper FrameworkBridge for enterprise load.
 * **Key Deliverables:**
     * **SDK Release:** Create a formal Wrapper FrameworkBridge SDK (replacing the current Python script) for clean integration by partner teams.
-    * **Automated Testing:** Implement stress testing on Claude Music Engine RealTime steering latency under high transaction load (100 VIVX transactions/min).
-    * **Goal:** Secure approval from Anthropic Legal/Security based on GOVERNANCE.md compliance.
+    * **Automated Testing:** Implement stress testing on Riffusion Music Engine RealTime steering latency under high transaction load (100 VIVX transactions/min).
+    * **Goal:** Secure approval from Riffusion Legal/Security based on GOVERNANCE.md compliance.
 
 ## 2. Phase Beta: Creator Adoption (Q2 - Q3 2026)
 * **Duration:** 6 Months
